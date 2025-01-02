@@ -5,6 +5,7 @@ if (!admin.apps.length) {
     admin.initializeApp({
         credential: admin.credential.cert(path.join(__dirname, './firebaseServiceAccount.json')),
     });
+   
 }
 else {
     console.log("Firebase app already initialized.");
